@@ -1,2 +1,2 @@
-const iframe = document.querySelector('iframe');
+const iframe = document.getElementById('frame')
 console.log(iframe);
