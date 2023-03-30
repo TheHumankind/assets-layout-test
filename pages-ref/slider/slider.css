@@ -26,10 +26,18 @@ body {
   
 .swiper-pagination {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    column-gap: 7px;
     bottom: 10px;
     left: 50%;
 }
 
 .swiper-pagination-bullet {
-    background-color: red;
+    column-gap: 10px;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #242422;
 }
