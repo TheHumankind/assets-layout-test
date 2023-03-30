@@ -1,7 +1,13 @@
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
 .swiper {
     width: 100%;
-    height: 600px;
+    height: 400px;
 }
 .swiper-container {
     width: 100%;
@@ -22,11 +28,8 @@
     position: absolute;
     bottom: 10px;
     left: 50%;
-    transform: translateX(-50%);
 }
 
 .swiper-pagination-bullet {
-    background-color: #000;
-    width: 10px;
-    height: 10px;
+    background-color: red;
 }
