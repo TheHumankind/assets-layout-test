@@ -6,5 +6,10 @@ var mySwiper = new Swiper('.swiper-container', {
       delay: 0,
     },
     slidesPerView: 3,
+    breakpoints: {
+      425: {
+        slidesPerView: 2,
+      },
+    },
     centeredSlides: true,
 });
