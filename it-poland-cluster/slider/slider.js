@@ -5,6 +5,6 @@ var mySwiper = new Swiper('.swiper-container', {
     autoplay: {
       delay: 0,
     },
-    slidesPerView: 5,
+    slidesPerView: 3,
     centeredSlides: true,
 });
