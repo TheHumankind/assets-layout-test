@@ -8,12 +8,13 @@
     <title>Test Phone</title>
 </head>
 <body>
-    <form action="https://api.sheetmonkey.io/form/rGv5WdVcYLTm5gq7R4hTHj" method="post" class="form">
+    <form action="https://api.sheetmonkey.io/form/rGv5WdVcYLTm5gq7R4hTHj" method="post" target="output" class="form">
         <input class="input" type="text" id="name" name="name" placeholder="Enter your name">
         <input class="input" type="text" id="phone" name="phone" placeholder="+38 (000) 000-00-00">
         <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
         <input class="input" type="submit" value="Sign Up" />
     </form>
+    <iframe name="output" frameborder="0"></iframe>
     <script src="imask.js" defer></script>
     <script src="phone.js" defer></script>
 </body>
