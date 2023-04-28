@@ -1,9 +1,10 @@
 const phoneInput = document.getElementById('phone');
 
 let maskOptions = {
-    mask: '+{38} ( 000 ) 000 - 00 - 00',
+    mask: '+38{0} (00) 000-00-00',
     lazy: false,
-    placeholderChar: '_',
-};
+    greedy: false,
+    placeholderChar: '0',
+}
 
 let mask = IMask(phoneInput, maskOptions);
