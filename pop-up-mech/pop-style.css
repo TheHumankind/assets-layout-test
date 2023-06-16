@@ -1,0 +1,159 @@
+:root {
+    --main-color: #CC0033;
+    --text-color: #373737;
+    --divider-color: #DADADA;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system,'Open Sans', sans-serif;
+    color: var(--text-color);
+}
+
+.main-header {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sub-header {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.btn-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 44px;
+    border-radius: 8px;
+}
+
+.btn-agree {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.btn-disagree {
+    border: 1px solid var(--text-color);
+}
+
+.pop-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.pop-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    padding: 20px 44.5px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    background-color: var(--main-color);
+}
+
+.pop-logo > img {
+    max-width: 174px;
+    width: 100%;
+}
+
+.pop-header {
+    width: 320px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.pop-subheader {
+    margin-bottom: 8px;
+}
+
+.pop-notification {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100% - 104px);
+}
+
+.pop-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 512px;
+    width: 100%;
+    height: 615px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 16px;
+    transform: translate(-50%, -50%);
+}
+
+.decription {
+    margin-bottom: 16px;
+}
+
+.decription:last-child {
+    margin-bottom: auto;
+}
+
+.pop-link {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.divider {
+    width: 100%;
+    margin-top: auto;
+}
+
+.pop-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 68px;
+}
+
+.on {
+    display: flex;
+}
+
+.off {
+    display: none;
+}
+
+@media (max-width: 470px) {
+    .btn {
+        width: 100%;
+        height: 44px;
+    }
+
+    .pop-content {
+        padding: 16px;
+    }
+
+    .divider {
+        width: calc(100% + 32px);
+    }
+
+    .pop-footer {
+        flex-direction: column;
+        padding-top: 16px;
+        row-gap: 12px;
+    }
+}
