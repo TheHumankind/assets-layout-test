@@ -12,7 +12,7 @@
             <div class="pop-logo">
                 <img src="./icons/logo.svg" alt="auto parts logo">
             </div>
-            <div class="pop-notification on" id="notification">
+            <div class="pop-notification" id="notification">
                 <div class="pop-header main-header">
                     Give 15% Off Your Next Purchase & Never Miss a Thing!
                 </div>
@@ -30,12 +30,63 @@
                 </div>
                 <hr class="divider">
                 <div class="pop-footer">
-                    <div class="btn btn-disagree" id="disagreeBtn">No Thanks</div>
-                    <div class="btn btn-agree" id="agreeBtn">Let's Go</div>
+                    <button class="btn btn-disagree btn-text" id="disagreeBtn">No Thanks</button>
+                    <button class="btn btn-agree btn-text" id="agreeBtn">Let's Go</button>
+                </div>
+            </div>
+            <div class="pop-form-container on" id="popForm">
+                <div class="ta-left main-header">
+                    Personal Information
+                </div>
+                <form class="form" id="form">
+                    <div class="names">
+                        <label class="label">
+                            <span class="sub-header">First Name</span>
+                            <input class="input" type="text" placeholder="Your first name" maxlength="16" required>
+                        </label>
+                        <label class="label">
+                            <span class="sub-header">First Name</span>
+                            <input class="input" type="text" placeholder="Your last name" maxlength="16" required>
+                        </label>
+                    </div>
+                    <label class="label">
+                        <span class="sub-header">Date of Birth</span>
+                        <input class="input" id="date" type="text">
+                    </label>
+                    <label class="label">
+                        <span class="sub-header">Email</span>
+                        <input class="input" id="date" type="email" placeholder="Your email">
+                    </label>
+                    <label class="label">
+                        <span class="sub-header">Mobile Phone</span>
+                        <input class="input" id="date" type="tel" placeholder="Your mobile phone" >
+                    </label>
+                    <div class="checkbox">
+                        <div class="checkbox-descr">
+                            <div class="sub-header">
+                                Maintenance Needs
+                            </div>
+                            <div class="text">
+                                Routine, Basic
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </form>
+                <hr class="divider">
+                <div class="pop-footer">
+                    <button class="btn btn-agree btn-text submit">
+                        Save
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./imask.js" defer></script>
     <script src="./pop-script.js" defer></script>
 </body>
 </html>
