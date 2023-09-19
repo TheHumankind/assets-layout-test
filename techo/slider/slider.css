@@ -38,6 +38,7 @@ body {
     max-width: 240px;
     width: 100%;
     max-height: 90px;
+    object-fit: cover;
 }
 
 .swiper-slide-content > a {
