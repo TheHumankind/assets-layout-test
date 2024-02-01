@@ -1,0 +1,26 @@
+.vim-animation {
+    position: relative;
+    max-width: 778px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.phone {
+    width: 100%;
+}
+
+.apple {
+    position: absolute;
+    top: 7.6%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-50%, 0%) scale(1.1);
+    z-index: -1;
+}
+
+.vim-phone {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
