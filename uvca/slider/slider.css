@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: 'rawline-regular', 'rawline-semi';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+  
+.swiper-slide {
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide-content {
+    max-width: 200px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    column-gap: 7px;
+    bottom: 10px;
+    left: 50%;
+}
+
+.swiper-pagination-bullet {
+    column-gap: 10px;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #242422;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  /* Custom styles for swiper slides */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.card {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: 
+    flex-start; 
+    width: 180px; 
+    height: 260px; 
+    box-shadow: 0px 0px 25px -10px rgba(66, 68, 90, 1); 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-img {
+    position: relative;
+    width: 100%; 
+    max-height: 140px; 
+    height: 100%; 
+    overflow: hidden;
+}
+
+.card-img > img {
+    width: 100%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+.card-content-name {
+    margin-top: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'rawline-semi';
+}
+
+.card-content-prof {
+    margin-top: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #909090;
+}
+
+.card-content-button {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 36px; 
+    border-radius: 8px; 
+    border: none; 
+    background-color: var(--asset-accent-color, #47b972); 
+    color: #fff; 
+    font-size: 14px; 
+    padding: 5px; 
+    font-weight: 600; 
+    text-decoration: none;
+    text-transform: uppercase;
+}
